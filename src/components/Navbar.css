@@ -1,0 +1,47 @@
+.navbar {
+    background: #1f2937;
+    color: white;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #d1d5db;
+    font-weight: 500;
+}
+
+.link.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 24px;
+    height: 3px;
+    background: white;
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

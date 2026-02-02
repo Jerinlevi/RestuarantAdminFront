@@ -1,0 +1,1 @@
+export const API_URL=import.meta.env.VAPI_URL || 'https://backendresturantadmin.onrender.com/api'
